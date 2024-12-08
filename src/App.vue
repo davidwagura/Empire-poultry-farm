@@ -1,21 +1,17 @@
 <template>
-  <div>
-    <HeaderPage />
-    <SearchForm />
-    <ResultsTable />
-  </div>
+    <div>
+      <Navbar />
+      <HeroSection />
+      <Features />
+      <AboutSection />
+      <Footer />
+    </div>
 </template>
 
-<script>
-import HeaderPage from "./components/HeaderPage.vue";
-import SearchForm from "./components/SearchForm.vue";
-import ResultsTable from "./components/ResultsTable.vue";
-
-export default {
-  components: {
-    HeaderPage,
-    SearchForm,
-    ResultsTable,
-  },
-};
+<script setup>
+import Navbar from './components/NavbarPage.vue';
+import HeroSection from './components/HeroSection.vue';
+import Features from './components/FeaturesPage.vue';
+import AboutSection from './components/AboutSection.vue';
+import Footer from './components/FooterPage.vue';
 </script>
