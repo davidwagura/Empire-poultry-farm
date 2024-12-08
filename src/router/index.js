@@ -1,9 +1,9 @@
-
 import { createRouter, createWebHistory } from 'vue-router'
-
+import HeaderPage from '@/components/HeaderPage.vue'
 
 const routes = [
 
+    { path: '/', component:HeaderPage }
 
 ]
 
