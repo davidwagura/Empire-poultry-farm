@@ -1,0 +1,22 @@
+body {
+  background-color: #f3efe0;
+  color: #4444a6;
+}
+.primary-yellow-btn {
+  background-color: #f5da01;
+  color: #ffff;
+}
+.primary-yellow-btn:hover {
+  color: #e63330;
+}
+.nav-btn {
+}
+.nav-btn:hover {
+  color: #e63330;
+}
+.primary-blue-text-color {
+  color: #4444a6;
+}
+.primary-red-color {
+  color: #e63330;
+}
