@@ -1,27 +1,63 @@
 <template>
-    <nav class="bg-gray-800 text-white">
-      <div class="container mx-auto flex justify-between items-center py-4">
-        <div class="text-xl font-bold">Brand</div>
-        <ul class="hidden md:flex space-x-4">
-          <li><a href="#" class="hover:text-blue-400">Home</a></li>
-          <li><a href="#" class="hover:text-blue-400">About</a></li>
-          <li><a href="#" class="hover:text-blue-400">Services</a></li>
-          <li><a href="#" class="hover:text-blue-400">Contact</a></li>
-        </ul>
-        <div class="md:hidden">
-          <button @click="toggleMenu" class="focus:outline-none">Menu</button>
-        </div>
-      </div>
-    </nav>
-  </template>
-  
-  <script>
-  export default {
-    methods: {
-      toggleMenu() {
-        // Add functionality to toggle mobile menu
-      }
-    }
-  };
-  </script>
-  
+	<div>
+		<div class="primary-blue-text-color text-sm flex flex-row justify-between items-center px-4 sm:px-6 py-2">
+			<span class="text-center sm:text-left">Empire Poultry Farm</span>
+			<span class="flex items-center space-x-2 mt-2 sm:mt-0">
+				<img src="https://flagcdn.com/w40/ke.png" alt="Kenya" class="w-5 h-5">
+				<span>Kenya</span>
+			</span>
+		</div>
+		<nav class="shadow">
+			<div class="container mx-auto flex flex-wrap justify-between items-center px-4 sm:px-6 py-4">
+				<div class="flex items-center">
+					<img src="../../public/chicken-logo.jpg" alt="Chicken Logo" class="h-16 sm:h-24 object-contain">
+				</div>
+				<button class="sm:hidden flex items-center text-gray-800" @click="isMenuOpen = !isMenuOpen">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+					</svg>
+				</button>
+				<ul class="w-full sm:flex sm:space-x-8 sm:w-auto mt-4 sm:mt-0 text-center sm:text-left" :class="{ hidden: !isMenuOpen }">
+					<li>
+						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'HOME' }" @click="setActiveTab('HOME')">HOME</a>
+					</li>
+					<li>
+						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CORPORATE' }" @click="setActiveTab('CORPORATE')">CORPORATE</a>
+					</li>
+					<li>
+						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'FOODS' }" @click="setActiveTab('FOODS')">FOODS</a>
+					</li>
+					<li>
+						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CHICKS' }" @click="setActiveTab('CHICKS')">DAY OLD CHICKS</a>
+					</li>
+					<li>
+						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CAREERS' }" @click="setActiveTab('CAREERS')">CAREERS</a>
+					</li>
+					<li>
+						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CONTACT' }" @click="setActiveTab('CONTACT')">CONTACT</a>
+					</li>
+				</ul>
+				<div class="space-x-4 mt-4 hidden sm:mt-0 sm:flex sm:items-center">
+					<button class="primary-yellow-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full" :class="{ 'text-[#e63330] font-semibold': activeTab === 'BOOK' }" @click="setActiveTab('BOOK')">BOOK NOW</button>
+					<button class="primary-yellow-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full" :class="{ 'text-[#e63330] font-semibold': activeTab === 'SHOP' }" @click="setActiveTab('SHOP')">SHOP NOW</button>
+				</div>
+			</div>
+		</nav>
+	</div>
+</template>
+<script>
+export default {
+	name: "NavPage",
+	data() {
+		return {
+			isMenuOpen: false,
+			activeTab: null,
+		};
+	},
+	methods: {
+		setActiveTab(tab) {
+			this.activeTab = tab;
+		},
+	},
+};
+</script>
