@@ -1,56 +1,74 @@
 body {
   background-color: #f3efe0;
   color: #5028a4;
+  font-family: 'Roboto', sans-serif;
 }
+
 .primary-yellow-btn {
-  background-color: #f5da01; 
+  background-color: #f5da01;
   color: #ffff;
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .primary-yellow-btn:hover {
   background-color: #007bff;
   color: #fff;
 }
-.nav-btn {
-}
+
+.nav-btn {}
+
 .nav-btn:hover {
   color: #e63330;
 }
+
 .primary-blue-text-color {
   color: #4444a6;
 }
+
 .primary-red-color {
   color: #e63330;
 }
+
 .icon-youtube {
   color: #ffff;
 }
+
 .icon-youtube:hover {
   color: #e63330;
   border-color: #e63330;
-  transform: ;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
+
 .icon-facebook {
   color: #ffff;
 }
+
 .icon-facebook:hover {
   color: #007bff;
   border-color: #007bff;
-  transform: ;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
+
 .icon-instagram {
   color: #ffff;
 }
+
 .icon-instagram:hover {
   color: #E1306C;
   border-color: #E1306C;
-  transform: ;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
+
 .icon-twitter {
   color: #ffff;
 }
+
 .icon-twitter:hover {
   color: #000000;
   border-color: #000000;
-  transform: ;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }

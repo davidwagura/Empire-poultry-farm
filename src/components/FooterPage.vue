@@ -1,6 +1,6 @@
 <template>
-	<footer class="bg-[#a5c6c6] py-8">
-		<div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+	<footer class="bg-[#a5c6c6]">
+		<div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 p-12 leading-loose text-md">
 			<div>
 				<h3 class="text-2xl mb-4">Our Location</h3>
 				<p> Kenchic PLC Head Office, <br> Exsan Hse, Enterprise Rd <br> P.O. BOX 20052, 00200 Nairobi, <br> Kenya </p>
