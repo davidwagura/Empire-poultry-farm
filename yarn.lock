@@ -1300,6 +1300,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/fontawesome-free@npm:^6.7.1":
+  version: 6.7.1
+  resolution: "@fortawesome/fontawesome-free@npm:6.7.1"
+  checksum: 10c0/5bebf5f9684fc377fb7df36cf7ee37e112a8987e592228ac464b81edc0eb002e1fa8675977b82d15d304cda813da4fafbc38cf0c3ca2744c710390a58a460495
+  languageName: node
+  linkType: hard
+
 "@hapi/hoek@npm:^9.0.0, @hapi/hoek@npm:^9.3.0":
   version: 9.3.0
   resolution: "@hapi/hoek@npm:9.3.0"
@@ -7278,6 +7285,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.12.16"
     "@babel/eslint-parser": "npm:^7.12.16"
+    "@fortawesome/fontawesome-free": "npm:^6.7.1"
     "@vue/cli-plugin-babel": "npm:~5.0.0"
     "@vue/cli-plugin-eslint": "npm:~5.0.0"
     "@vue/cli-service": "npm:~5.0.0"
