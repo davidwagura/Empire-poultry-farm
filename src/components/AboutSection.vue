@@ -3,7 +3,7 @@
   <!-- Background Pattern -->
   <div
     class="absolute inset-0 bg-repeat bg-opacity-10"
-    style="background-image: url('https://via.placeholder.com/200x200?text=Pattern'); opacity: 0.2;"
+    style="background-image: url('https://via.placeholder.com/200x200?text=Chicken'); opacity: 0.2;"
   ></div>
 
   <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
