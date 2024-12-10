@@ -10,9 +10,9 @@
 		<nav class="shadow">
 			<div class="container mx-auto flex flex-wrap justify-between items-center px-4 sm:px-6 py-4">
 				<div class="flex items-center">
-					<img src="../../public/chicken-logo.jpg" alt="Chicken Logo" class="h-16 sm:h-24 object-contain">
+					<img src="@/assets/images/chicken-logo.jpg" alt="Chicken Logo" class="h-16 sm:h-24 object-contain">
 				</div>
-				<button class="sm:hidden flex items-center text-gray-800" @click="isMenuOpen = !isMenuOpen">
+				<button class="sm:hidden flex items-center" @click="isMenuOpen = !isMenuOpen">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
 					</svg>
@@ -45,19 +45,31 @@
 		</nav>
 	</div>
 </template>
-<script>
-export default {
-	name: "NavPage",
-	data() {
-		return {
-			isMenuOpen: false,
-			activeTab: null,
-		};
-	},
-	methods: {
-		setActiveTab(tab) {
-			this.activeTab = tab;
-		},
-	},
+
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const isMenuOpen = ref(false);
+const activeTab = ref(null);
+
+const setActiveTab = (tab) => {
+	activeTab.value = tab;
 };
+
+onMounted(() => {
+	const path = window.location.pathname;
+	if (path === '/') {
+		activeTab.value = 'HOME';
+	} else if (path === '/about-us') {
+		activeTab.value = 'ABOUT';
+	} else if (path.includes('foods')) {
+		activeTab.value = 'FOODS';
+	} else if (path.includes('chicks')) {
+		activeTab.value = 'CHICKS';
+	} else if (path.includes('careers')) {
+		activeTab.value = 'CAREERS';
+	} else if (path.includes('contact')) {
+		activeTab.value = 'CONTACT';
+	}
+});
 </script>
