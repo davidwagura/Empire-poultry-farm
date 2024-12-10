@@ -4,7 +4,7 @@
 			<img v-for="(image, index) in images" :key="index" :src="require(`@/assets/images/${image}`)" alt="Farm Image" class="absolute inset-0 w-full h-full object-cover" v-show="currentImageIndex === index" />
 		</transition-group>
 		<div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-			<div class="max-w-md p-6 bg-white bg-opacity-80 rounded-lg shadow-lg text-center">
+			<div class="max-w-md p-6 bg-white bg-opacity-60 rounded-lg shadow-lg text-center">
 				<h2 class="text-3xl font-bold mb-4">Farm to Farm</h2>
 				<p class="mb-6"> The chicks we breed to the birds you rear; trace the process from day one. </p>
 				<button @click="onViewProducts" class="primary-blue-btn rounded border"> View Product Range </button>
@@ -21,8 +21,13 @@ const router = useRouter();
 
 const images = [
     'chick.jpg',
-    'chicken.jpg',
-    'roster2.jpg',
+    // 'roster1.jpg',
+	'hen.jpg',
+	'chicken2.jpg',
+	'chicken.jpg',
+	'roster.jpg',
+
+
 ];
 
 const currentImageIndex = ref(0);

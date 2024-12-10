@@ -43,6 +43,7 @@
 				</div>
 			</div>
 		</nav>
+		<hr class="border-1">
 	</div>
 </template>
 

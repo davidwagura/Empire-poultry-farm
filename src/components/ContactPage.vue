@@ -1,5 +1,5 @@
 <template>
-	<div class="relative bg-white primary-blue-text-color">
+	<div class="relative bg-gray-50 primary-blue-text-color">
 		<div class="absolute inset-0 bg-repeat bg-opacity-10" style="background-image: url('https://via.placeholder.com/200x200?text=Chicken'); opacity: 0.2;"></div>
 		<div class="relative z-10 py-1">
 			<div class="container mx-auto text-center mb-12 m-2">
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="container mx-auto mt-12">
-				<h2 class="text-4xl font-semibold text-center primary-blue-text-color mb-4">Our Location</h2>
+				<h2 class="text-4xl font-bold text-center primary-blue-text-color mb-4">Our Location</h2>
 				<iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="400" style="border:0" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 		</div>
