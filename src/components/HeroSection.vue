@@ -1,19 +1,68 @@
 <template>
-    <section class="bg-hero-pattern bg-cover bg-center h-screen text-center flex items-center justify-center text-white">
-      <div>
-        <h1 class="text-4xl md:text-6xl font-bold">Welcome to Our Website</h1>
-        <p class="mt-4 text-lg">Explore our features and services</p>
-        <button class="mt-6 px-8 py-2 bg-blue-600 rounded hover:bg-blue-800">
-          Get Started
-        </button>
-      </div>
-    </section>
-  </template>
-  
-  <style>
-  /* Add a custom background image */
-  .bg-hero-pattern {
-    background-image: url('../../public/chicken-hen-livestock.webp');
-  }
-  </style>
-  
+	<div class="relative overflow-hidden min-h-screen flex items-center justify-center">
+		<transition-group name="fade" tag="div" class="absolute inset-0 z-0">
+			<img v-for="(image, index) in images" :key="index" :src="require(`@/assets/images/${image}`)" alt="Farm Image" class="absolute inset-0 w-full h-full object-cover" v-show="currentImageIndex === index" />
+		</transition-group>
+		<div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+			<div class="max-w-md p-6 bg-white bg-opacity-80 rounded-lg shadow-lg text-center">
+				<h2 class="text-3xl font-bold mb-4">Farm to Farm</h2>
+				<p class="mb-6"> The chicks we breed to the birds you rear; trace the process from day one. </p>
+				<button @click="onViewProducts" class="primary-blue-btn rounded border"> View Product Range </button>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script setup>
+import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const images = [
+    'chick.jpg',
+    'chicken.jpg',
+    'roster2.jpg',
+];
+
+const currentImageIndex = ref(0);
+
+const changeImage = () => {
+    currentImageIndex.value = (currentImageIndex.value + 1) % images.length;
+};
+
+onMounted(() => {
+    setInterval(changeImage, 3000);
+});
+
+const onViewProducts = () => {
+    router.push('/products');
+};
+</script>
+
+<style scoped>
+	.fade-enter-active, .fade-leave-active {
+		transition: opacity 1s;
+	}
+	.fade-enter, .fade-leave-to {
+		opacity: 0;
+	}
+	.overlay {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+		padding: 1rem;
+	}
+	@media (min-width: 640px) {
+		.container {
+			padding: 2rem;
+		}
+	}
+	@media (min-width: 1024px) {
+		.container {
+			padding: 3rem;
+		}
+	}
+</style>

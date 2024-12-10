@@ -7,6 +7,7 @@ body {
 .primary-yellow-btn {
   background-color: #f5da01;
   color: #ffff;
+  cursor: pointer; 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -15,7 +16,9 @@ body {
   color: #fff;
 }
 
-.nav-btn {}
+.nav-btn {
+  cursor: pointer; 
+}
 
 .nav-btn:hover {
   color: #e63330;
@@ -31,6 +34,7 @@ body {
 
 .icon-youtube {
   color: #ffff;
+  cursor: pointer; 
 }
 
 .icon-youtube:hover {
@@ -42,6 +46,7 @@ body {
 
 .icon-facebook {
   color: #ffff;
+  cursor: pointer; 
 }
 
 .icon-facebook:hover {
@@ -53,6 +58,7 @@ body {
 
 .icon-instagram {
   color: #ffff;
+  cursor: pointer; 
 }
 
 .icon-instagram:hover {
@@ -64,6 +70,7 @@ body {
 
 .icon-twitter {
   color: #ffff;
+  cursor: pointer; 
 }
 
 .icon-twitter:hover {
@@ -71,4 +78,18 @@ body {
   border-color: #000000;
   transform: scale(1.1);
   transition: transform 0.3s ease;
+}
+
+.primary-blue-btn {
+  background-color: #007bff; 
+  color: #ffffff;  
+  cursor: pointer; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; 
+}
+
+.primary-blue-btn:hover {
+  background-color: #2596be; 
 }
