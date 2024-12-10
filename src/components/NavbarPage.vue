@@ -38,8 +38,8 @@
 					</li>
 				</ul>
 				<div class="space-x-4 mt-4 hidden sm:mt-0 sm:flex sm:items-center">
-					<button class="primary-yellow-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full" :class="{ 'text-[#e63330] font-semibold': activeTab === 'BOOK' }" @click="setActiveTab('BOOK')">BOOK NOW</button>
-					<button class="primary-yellow-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full" :class="{ 'text-[#e63330] font-semibold': activeTab === 'SHOP' }" @click="setActiveTab('SHOP')">SHOP NOW</button>
+					<button class="primary-yellow-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full">BOOK NOW</button>
+					<button class="primary-yellow-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full">SHOP NOW</button>
 				</div>
 			</div>
 		</nav>
