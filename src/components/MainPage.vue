@@ -1,5 +1,13 @@
 <template>
     <div>
-        <h1 class="text-red-400">HAe</h1>
+      <!-- <HeroSection /> -->
+      <!-- <Features /> -->
+      <AboutSection />
     </div>
 </template>
+
+<script setup>
+// import HeroSection from './components/HeroSection.vue';
+// import Features from './components/FeaturesPage.vue';
+import AboutSection from '../components/AboutSection.vue';
+</script>

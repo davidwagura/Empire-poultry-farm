@@ -1,5 +1,5 @@
 <template>
-<div class="bg-gray-50 py-16 px-6 md:px-12 lg:px-24 relative">
+    <div class="bg-gray-50 py-16 px-6 md:px-12 lg:px-24 relative">
   <!-- Background Pattern -->
   <div
     class="absolute inset-0 bg-repeat bg-opacity-10"
@@ -58,5 +58,4 @@
     </div>
   </div>
 </div>
-  </template>
-  
+</template>

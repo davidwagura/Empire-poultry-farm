@@ -19,10 +19,10 @@
 				</button>
 				<ul class="w-full sm:flex sm:space-x-8 sm:w-auto mt-4 sm:mt-0 text-center sm:text-left" :class="{ hidden: !isMenuOpen }">
 					<li>
-						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'HOME' }" @click="setActiveTab('HOME')">HOME</a>
+						<a href="/" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'HOME' }" @click="setActiveTab('HOME')">HOME</a>
 					</li>
 					<li>
-						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CORPORATE' }" @click="setActiveTab('CORPORATE')">CORPORATE</a>
+						<a href="/about-us" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'ABOUT' }" @click="setActiveTab('ABOUT')">ABOUT</a>
 					</li>
 					<li>
 						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'FOODS' }" @click="setActiveTab('FOODS')">FOODS</a>
