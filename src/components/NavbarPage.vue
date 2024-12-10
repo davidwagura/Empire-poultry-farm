@@ -34,7 +34,7 @@
 						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CAREERS' }" @click="setActiveTab('CAREERS')">CAREERS</a>
 					</li>
 					<li>
-						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CONTACT' }" @click="setActiveTab('CONTACT')">CONTACT</a>
+						<a href="/contact" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CONTACT' }" @click="setActiveTab('CONTACT')">CONTACT</a>
 					</li>
 				</ul>
 				<div class="space-x-4 mt-4 hidden sm:mt-0 sm:flex sm:items-center">
