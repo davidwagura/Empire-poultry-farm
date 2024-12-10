@@ -4,6 +4,7 @@ import App from './App.vue'
 import '@/assets/tailwind.css'
 import '@/assets/main.css'
 import router from './router'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 
