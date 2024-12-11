@@ -7,7 +7,7 @@
 				<p class="mt-4 text-lg md:text-xl max-w-xl"> Your trusted source for premium, fresh, and ethically-raised poultry products. </p>
 			</div>
 		</section>
-		<section class="py-16 bg-white">
+		<section class="py-16 bg-gray-50">
 			<div class="max-w-7xl mx-auto px-4 md:px-8">
 				<h2 class="text-3xl font-bold text-center mb-8">Our Story</h2>
 				<p class="text-lg text-gray-700 leading-relaxed text-center"> At our poultry farm, we take pride in delivering the freshest and healthiest poultry products directly to your table. Our journey began over 20 years ago with a commitment to quality, sustainability, and ethical farming practices. Today, we are a trusted name in the industry, known for producing organic, antibiotic-free chicken and eggs. </p>
@@ -67,7 +67,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="py-16 text-gray-700">
+		<section class="py-16 text-gray-700 bg-gray-50">
 			<div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
 				<h2 class="text-3xl primary-blue-text-color font-bold mb-4">Experience the Difference</h2>
 				<p class="text-lg leading-relaxed mb-6"> Whether you're a retailer, a restaurant, or a family looking for fresh, high-quality poultry products, we've got you covered. Explore our range of chicken, eggs, and specialty products today. </p>
