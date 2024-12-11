@@ -24,7 +24,7 @@ const images = [
 	'https://cdn.pixabay.com/photo/2015/08/04/10/00/chickens-874507_960_720.jpg',
 	'https://cdn.pixabay.com/photo/2017/09/26/17/47/chicken-2789493_640.jpg',
 	'https://cdn.pixabay.com/photo/2019/04/24/08/48/chicken-4151637_640.jpg',
-	'https://img.freepik.com/premium-photo/white-cock-lot-chickens-green-background_593040-840.jpg?uid=R178498438&ga=GA1.1.1654126254.1733829576&semt=ais_hybrid',
+	'https://cdn.pixabay.com/photo/2019/04/21/23/24/chickens-4145198_640.jpg',
 	'https://cdn.pixabay.com/photo/2020/05/16/20/13/chicks-5179055_640.jpg',
 ];
 
