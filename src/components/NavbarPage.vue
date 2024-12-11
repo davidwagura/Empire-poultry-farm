@@ -63,8 +63,8 @@ onMounted(() => {
 		activeTab.value = 'HOME';
 	} else if (path === '/about-us') {
 		activeTab.value = 'ABOUT';
-	} else if (path.includes('foods')) {
-		activeTab.value = 'FOODS';
+	} else if (path.includes('/products')) {
+		activeTab.value = 'PRODUCTS';
 	} else if (path.includes('chicks')) {
 		activeTab.value = 'CHICKS';
 	} else if (path.includes('careers')) {
