@@ -27,12 +27,6 @@
 					<li>
 						<a href="/products" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'PRODUCTS' }" @click="setActiveTab('PRODUCTS')">PRODUCTS</a>
 					</li>
-					<!-- <li>
-						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CHICKS' }" @click="setActiveTab('CHICKS')">DAY OLD CHICKS</a>
-					</li>
-					<li>
-						<a href="#" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CAREERS' }" @click="setActiveTab('CAREERS')">CAREERS</a>
-					</li> -->
 					<li>
 						<a href="/contact" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CONTACT' }" @click="setActiveTab('CONTACT')">CONTACT</a>
 					</li>
