@@ -17,7 +17,7 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
 					</svg>
 				</button>
-				<ul class="w-full sm:flex sm:space-x-8 sm:w-auto mt-4 sm:mt-0 text-lg text-center sm:text-left" :class="{ hidden: !isMenuOpen }">
+				<ul class="w-full sm:flex sm:space-x-8 sm:w-auto  sm:mt-0 text-lg text-center sm:text-left" :class="{ hidden: !isMenuOpen }">
 					<li>
 						<a href="/" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'HOME' }" @click="setActiveTab('HOME')">HOME</a>
 					</li>
