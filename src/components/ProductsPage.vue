@@ -5,7 +5,7 @@
         <div
           v-for="product in products"
           :key="product.id"
-          class="bg-white shadow-md rounded-lg overflow-hidden"
+          class="bg-white rounded-lg overflow-hidden border shadow-lg hover:-translate-y-4" 
         >
           <img :src="product.image" :alt="product.name" class="w-full h-48 object-cover">
           <div class="p-4">

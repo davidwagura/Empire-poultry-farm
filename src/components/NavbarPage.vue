@@ -17,7 +17,7 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
 					</svg>
 				</button>
-				<ul class="w-full sm:flex sm:space-x-8 sm:w-auto mt-4 sm:mt-0 text-center sm:text-left" :class="{ hidden: !isMenuOpen }">
+				<ul class="w-full sm:flex sm:space-x-8 sm:w-auto  sm:mt-0 text-lg text-center sm:text-left" :class="{ hidden: !isMenuOpen }">
 					<li>
 						<a href="/" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'HOME' }" @click="setActiveTab('HOME')">HOME</a>
 					</li>
@@ -31,10 +31,10 @@
 						<a href="/contact" class="nav-btn block sm:inline" :class="{ 'text-[#e63330] font-semibold': activeTab === 'CONTACT' }" @click="setActiveTab('CONTACT')">CONTACT</a>
 					</li>
 				</ul>
-				<div class="space-x-4 mt-4 hidden sm:mt-0 sm:flex sm:items-center">
+				<!-- <div class="space-x-4 mt-4 hidden sm:mt-0 sm:flex sm:items-center">
 					<button class="primary-yellow-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full">BOOK NOW</button>
 					<button class="primary-yellow-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full">SHOP NOW</button>
-				</div>
+				</div> -->
 			</div>
 		</nav>
 		<hr class="border-1">
